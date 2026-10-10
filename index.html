@@ -3,196 +3,204 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HOLD WITH PRIYANKA</title>
+    <title>Trade with Gautam jha trading</title>
     <style>
         * {
-            box-sizing: border-box;
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
             font-family: Arial, sans-serif;
         }
 
         body {
-            background: linear-gradient(180deg, #181105 0%, #050505 100%);
-            color: #ffffff;
+            background-color: #000;
+            color: #fff;
             display: flex;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            padding: 20px;
+            padding: 15px;
         }
 
         .container {
-            max-width: 500px;
             width: 100%;
+            max-width: 420px;
             text-align: center;
-        }
-
-        .profile-pic {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            border: 3px solid #ffaa00;
-            margin-bottom: 20px;
-        }
-
-        h1 {
-            color: #ffaa00;
-            font-size: 28px;
-            margin-bottom: 5px;
-        }
-
-        .crown {
-            font-size: 20px;
-            margin: 0 5px;
-        }
-
-        .indices {
-            font-size: 18px;
-            color: #ffaa00;
-            letter-spacing: 2px;
-            margin-bottom: 15px;
-        }
-
-        .tagline {
-            font-size: 16px;
-            margin-bottom: 25px;
-            color: #d4d4d4;
-        }
-
-        .cta-button {
-            display: inline-flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #ffaa00;
-            color: #000;
-            font-size: 18px;
-            font-weight: bold;
-            padding: 15px 30px;
-            border-radius: 30px;
-            text-decoration: none;
-            width: 100%;
-            margin-bottom: 30px;
-            box-shadow: 0 4px 15px rgba(255, 170, 0, 0.3);
-        }
-
-        .cta-button svg {
-            margin-right: 10px;
-            fill: #000;
-        }
-
-        .cards {
             display: flex;
             flex-direction: column;
+            align-items: center;
             gap: 15px;
-            margin-bottom: 30px;
         }
 
-        .card {
-            background-color: #1a1a1a;
-            border: 1px solid #333;
-            border-radius: 12px;
-            padding: 20px;
-            text-align: left;
-            display: flex;
-            align-items: center;
-        }
-
-        .card-icon {
-            background: rgba(255, 170, 0, 0.1);
-            color: #ffaa00;
-            width: 50px;
-            height: 50px;
-            border-radius: 10px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 24px;
-            margin-right: 15px;
-            flex-shrink: 0;
-        }
-
-        .card-content h3 {
-            font-size: 18px;
+        /* Profile Image Wrapper */
+        .profile-container {
+            width: 170px;
+            height: 170px;
+            border-radius: 50%;
+            border: 3px solid #fff;
+            overflow: hidden;
+            box-shadow: 0 0 25px rgba(255, 255, 255, 0.2);
             margin-bottom: 5px;
         }
 
-        .card-content p {
-            font-size: 14px;
-            color: #888;
+        .profile-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
 
-        .disclaimer {
-            font-size: 12px;
-            color: #666;
-            margin-bottom: 20px;
-            line-height: 1.5;
+        /* Title Box */
+        .title-box {
+            width: 100%;
+            border: 1.5px solid #fff;
+            border-radius: 8px;
+            padding: 12px 10px;
+            font-size: 20px;
+            font-weight: bold;
+            font-family: 'Georgia', serif;
+            letter-spacing: 0.5px;
         }
 
-        .footer {
-            font-size: 12px;
-            color: #ffaa00;
+        /* Call To Action Button */
+        .btn-join {
+            width: 100%;
+            padding: 14px 10px;
+            background: linear-gradient(180deg, #1b75bc 0%, #004080 100%);
+            border: 1.5px solid #fff;
+            border-radius: 4px;
+            color: #fff;
+            font-size: 17px;
+            font-weight: bold;
             text-decoration: none;
-            display: inline-block;
-            transition: opacity 0.2s;
+            display: block;
+            box-shadow: 0 4px 15px rgba(0, 102, 204, 0.4);
+            letter-spacing: 0.5px;
         }
 
-        .footer:hover {
-            opacity: 0.8;
-            text-decoration: underline;
+        /* Click Here Pointer */
+        .click-here {
+            font-size: 26px;
+            font-weight: 800;
+            color: #38b6ff;
+            margin: 2px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+        }
+
+        /* Features Main Card */
+        .features-card {
+            width: 100%;
+            background-color: #080808;
+            border: 1px solid #222;
+            border-radius: 16px;
+            padding: 20px 15px;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.05);
+            text-align: left;
+        }
+
+        .feature-item {
+            font-size: 15px;
+            font-weight: 600;
+        }
+
+        .stars {
+            color: #ff9900;
+            font-size: 16px;
+        }
+
+        /* Footer Tag Box */
+        .footer-box {
+            width: 100%;
+            border: 1.5px solid #fff;
+            border-radius: 6px;
+            padding: 10px;
+            font-size: 13px;
+            font-weight: bold;
+            line-height: 1.4;
+        }
+
+        /* Managed By Section (Clickable) */
+        .managed-by {
+            margin-top: 5px;
+            background-color: #0d131a;
+            border: 1.0px solid #1c2633;
+            border-radius: 12px;
+            padding: 10px 25px;
+            font-size: 14px;
+            color: #a0aab2;
+            width: 90%;
+            text-decoration: none;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .managed-by:hover {
+            border-color: #38b6ff;
+        }
+
+        .managed-by span {
+            color: #38b6ff;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <img src="https://i.ibb.co/KpPJZxqG/B3v5t-WAb-K6-Qasw7-Kg-Hxvgi-XXe8-D-ct-Yr396-HHYrxol-HH36i-UHJormo-K40-W4jcm-FRh-Rf-Lgp-OCu-PCRcr4k1-Lncs-N.jpg" alt="Profile" class="profile-pic">
+        <!-- Profile Image -->
+        <div class="profile-container">
+            <img src="https://i.ibb.co/8gs0Fr1S/vx-KQu-Tj-QOVl73qgedt-G8n1l9g-Obu-PUvu-D2n5-I1y-Gh-Wf-Akj-CD73ah-Di0-Rb-Zj5zz1d-Ff-It-USH-Yyp-D0v9-F5zm.jpg" alt="Trade with Gautam Jha">
+        </div>
 
-        <h1><span class="crown">👑</span>HOLD WITH PRIYANKA<span class="crown">👑</span></h1>
-        
-        <div class="indices">NIFTY • BANKNIFTY • SENSEX</div>
+        <!-- Channel Title -->
+        <div class="title-box">
+            Trade with Gautam jha trading
+        </div>
 
-        <p class="tagline">Clear market insights. Timely updates.<br>One focused trading community</p>
-
-        <a href="https://t.me/+QzwGuUJ7pOhjN2I1" class="cta-button">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1.85 14.53l-3.32-1.44c-.79-.34-.78-1.55.02-1.9l9.04-4.08c.55-.25 1.15.22.95.83l-2.02 6.8c-.27.88-1.28.98-1.78.19l-4.46-4.52z"/></svg>
-            JOIN TELEGRAM CHANNEL
+        <!-- Button with Click Event Tracking -->
+        <a href="https://t.me/+ig2KGxYEznI5YmUx" class="btn-join" target="_blank" onclick="fbq('track', 'Lead');">
+            JOIN NOW - FREE SIGNALS
         </a>
 
-        <div class="cards">
-            <div class="card">
-                <div class="card-icon">⚡</div>
-                <div class="card-content">
-                    <h3>Daily Market Insights</h3>
-                    <p>Actionable market updates shared consistently</p>
-                </div>
+        <!-- Click Here Text -->
+        <div class="click-here">
+            Click Here 👆
+        </div>
+
+        <!-- Content Card -->
+        <div class="features-card">
+            <div class="feature-item">
+                📌 India No.1 Telegram Channel <span class="stars">★★★★★</span>
             </div>
-            <div class="card">
-                <div class="card-icon">🎯</div>
-                <div class="card-content">
-                    <h3>Research-Based Analysis</h3>
-                    <p>Key levels and market observations with a clear view</p>
-                </div>
+            <div class="feature-item">
+                🚀 8 Years Experience Of Market
             </div>
-            <div class="card">
-                <div class="card-icon">📈</div>
-                <div class="card-content">
-                    <h3>Market Experience</h3>
-                    <p>Perspective developed through different market cycles</p>
-                </div>
+            <div class="feature-item">
+                ✅ Risk Management
+            </div>
+            <div class="feature-item">
+                🎯 Accuracy More Then 90%
+            </div>
+            <div class="feature-item">
+                📊 Every Day Nifty50 Volume Research Levels
             </div>
         </div>
 
-        <a href="https://t.me/+QzwGuUJ7pOhjN2I1" class="cta-button">
-            JOIN TELEGRAM CHANNEL
+        <!-- Sub Footer Box -->
+        <div class="footer-box">
+            🗿 No Paid Promotions • No Fake Calls • 100% Transparent Performance
+        </div>
+
+        <!-- Managed By Badge (Linked) -->
+        <a href="https://t.me/+jViKIQmWTLFmNjNl" class="managed-by" target="_blank">
+            Managed by <span>Ai ads agency</span>
         </a>
-
-        <p class="disclaimer">Market information is provided for educational purposes only. Please conduct your own research and consider your risk profile.</p>
-
-        <!-- Footer Link Added -->
-        <a href="https://t.me/+DXSdQQxRrLkzMzM1" class="footer">GrowFi agency • Instant Growth 🚀</a>
     </div>
-
 <!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
@@ -203,11 +211,11 @@ n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '2980713252292545');
+fbq('init', '1848650489880896');
 fbq('track', 'PageView');
 </script>
 <noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=2980713252292545&ev=PageView&noscript=1"
+src="https://www.facebook.com/tr?id=1848650489880896&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
 </body>
